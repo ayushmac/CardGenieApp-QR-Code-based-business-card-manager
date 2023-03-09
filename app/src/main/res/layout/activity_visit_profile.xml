@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundmain"
+    tools:context=".VisitProfile">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/visit_welcome_profile_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/profileicon"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/visit_username_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Your Name"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="0dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="0dp"
+        app:strokeWidth="4dp"
+        app:strokeColor="@color/light_blue_600"
+        app:cardCornerRadius="20dp"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="20dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/personal_card_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundedcorners"
+                    android:radius="100dp"
+                    android:text="Visit My Personal Card"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:padding="20dp"
+                    android:textAllCaps="false"
+                    android:drawableStart="@drawable/ic_baseline_subdirectory_arrow_right_24"
+                    app:strokeColor="#E1DBDB">
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/social_media_card_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundedcorners"
+                    android:radius="100dp"
+                    android:text="Visit My Social Media Card"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:padding="20dp"
+                    android:textAllCaps="false"
+                    android:drawableStart="@drawable/ic_baseline_subdirectory_arrow_right_24"
+                    app:strokeColor="#E1DBDB">
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/gaming_card_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundedcorners"
+                    android:radius="100dp"
+                    android:text="Visit My Gaming Card"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:padding="20dp"
+                    android:textAllCaps="false"
+                    android:drawableStart="@drawable/ic_baseline_subdirectory_arrow_right_24"
+                    app:strokeColor="#E1DBDB">
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/business_card_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundedcorners"
+                    android:radius="100dp"
+                    android:text="Visit My Business Card"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:padding="20dp"
+                    android:textAllCaps="false"
+                    android:drawableStart="@drawable/ic_baseline_subdirectory_arrow_right_24"
+                    app:strokeColor="#E1DBDB">
+                </androidx.appcompat.widget.AppCompatButton>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</LinearLayout>

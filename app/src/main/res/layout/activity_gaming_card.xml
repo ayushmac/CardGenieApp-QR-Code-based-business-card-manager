@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/game"
+    tools:context=".GamingCard">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/welcome_profile_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/profileicon"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/myname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Your Name"
+        android:fontFamily="@font/montserrat_alternates_light"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="0dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@drawable/border"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="0dp"
+        app:strokeWidth="5dp"
+        app:strokeColor="@color/light_blue_600"
+        app:cardCornerRadius="20dp"
+                >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="20dp">
+                <TextView
+                    android:id="@+id/mybiotitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Bio"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:visibility="gone"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/mybiotxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Bio"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/montserrat_alternates_light"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:visibility="gone"
+                    android:textSize="15dp"
+                    android:textStyle="italic"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/followmetxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Follow Me On :"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/montserrat_alternates_light"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/facebook_link_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10dp"
+                    android:radius="100dp"
+                    android:text="  Facebook"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:padding="20dp"
+                    android:textAllCaps="false"
+                    app:cornerRadius="100dp"
+                    app:strokeColor="#E1DBDB"
+                    android:backgroundTint="#3b5998"
+                    app:icon="@drawable/facebook_white"
+                    app:iconSize="30dp"
+                    app:iconGravity="textStart"
+                    app:iconPadding="8dp">
+                </com.google.android.material.button.MaterialButton>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/insta_link_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10dp"
+                    android:radius="100dp"
+                    android:text="  Instagram"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:padding="20dp"
+                    android:textAllCaps="false"
+                    app:cornerRadius="100dp"
+                    app:strokeColor="#E1DBDB"
+                    android:backgroundTint="#d62976"
+                    app:icon="@drawable/instagram_white"
+                    app:iconSize="30dp"
+                    app:iconGravity="textStart"
+                    app:iconPadding="8dp">
+                </com.google.android.material.button.MaterialButton>
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/youtube_link_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10dp"
+                    android:radius="100dp"
+                    android:text="  Youtube"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:padding="20dp"
+                    android:textAllCaps="false"
+                    app:cornerRadius="100dp"
+                    app:strokeColor="#E1DBDB"
+                    android:backgroundTint="#c4302b"
+                    app:icon="@drawable/youtube_white"
+                    app:iconSize="30dp"
+                    app:iconGravity="textStart"
+                    app:iconPadding="8dp">
+                </com.google.android.material.button.MaterialButton>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/twitch_link_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10dp"
+                    android:radius="100dp"
+                    android:text="  Twitch"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:padding="20dp"
+                    android:textAllCaps="false"
+                    app:cornerRadius="100dp"
+                    app:strokeColor="#E1DBDB"
+                    android:backgroundTint="#6441a5"
+                    app:icon="@drawable/twitch_white"
+                    app:iconSize="30dp"
+                    app:iconGravity="textStart"
+                    app:iconPadding="8dp">
+                </com.google.android.material.button.MaterialButton>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/discord_link_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10dp"
+                    android:radius="100dp"
+                    android:text="  Discord"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:padding="20dp"
+                    android:textAllCaps="false"
+                    app:cornerRadius="100dp"
+                    app:strokeColor="#E1DBDB"
+                    android:backgroundTint="#5865F2"
+                    app:icon="@drawable/discord_white"
+                    app:iconSize="30dp"
+                    app:iconGravity="textStart"
+                    app:iconPadding="8dp">
+                </com.google.android.material.button.MaterialButton>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/show_gameqr_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:radius="100dp"
+                    android:text="Show Card Qr"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:padding="20dp"
+                    android:textAllCaps="false"
+                    app:cornerRadius="100dp"
+                    app:strokeColor="#E1DBDB"
+                    app:icon="@drawable/ic_baseline_remove_red_eye_24"
+                    app:iconSize="30dp"
+                    app:iconGravity="textStart"
+                    app:iconPadding="8dp">
+                </com.google.android.material.button.MaterialButton>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

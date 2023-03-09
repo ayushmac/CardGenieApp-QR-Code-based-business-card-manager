@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        mavenCentral() // For ImagePicker library, this line is enough. Although, it has been published on jitpack as well
+        maven { url "https://jitpack.io" }  //Make sure to add this in your project for uCrop - an internal library
+    }
+}
+rootProject.name = "CardGenieApp"
+include ':app'

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "333142682602",
+    "firebase_url": "https://cardgenieapp-a4321-default-rtdb.firebaseio.com",
+    "project_id": "cardgenieapp-a4321",
+    "storage_bucket": "cardgenieapp-a4321.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333142682602:android:d69582ff22bed0d51ce093",
+        "android_client_info": {
+          "package_name": "com.example.cardgenieapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333142682602-7msbc5idin7cev25mg26heecnd6vdh1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUBoS-K75gaVVVMnzN8zT9g8eL50z09DI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333142682602-7msbc5idin7cev25mg26heecnd6vdh1b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
